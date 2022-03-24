@@ -1,34 +1,49 @@
 {
   "expo": {
-    "name": "places-app",
-    "slug": "places-app",
+    "name": "Great-Placess",
+    "slug": "great-placess-app",
+    "privacy":"public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 5000
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "placeios.app"
+      "bundleIdentifier": "com.android.greatPlacess",
+      "buildNumber":"1.0.0"
     },
     "android": {
+      "package": "com.android.great_Placess",
+      "versionCode":1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/places-adaptive.png",
+        "backgroundColor": "#171717"
       },
-      "package": "places.app"
+      "permissions":[
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config":{
+        "googleMaps":{
+          "apiKey":"AIzaSyAKBFA7_eeyUL7sUW8QMf5MBWdjjBE7PvE"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     }
   }
 }
+ 
+

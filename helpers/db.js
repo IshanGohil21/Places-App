@@ -53,5 +53,6 @@ export const fetchPlaces = () => {
           );
         });
       });
+      console.log(fetchPlaces);
       return promise;
 }

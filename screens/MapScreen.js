@@ -64,7 +64,7 @@ MapScreen.navigationOptions = navData => {
     return{};
   }
   return {
-    headerRight: <TouchableOpacity style={styles.headerButton} onPress={saveFn}>
+    headerRight: ()=>  <TouchableOpacity style={styles.headerButton} onPress={saveFn}>
       <Text style={styles.headerButtonText}>Save</Text>
     </TouchableOpacity>
   };
